@@ -13,7 +13,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
   display: flex;
@@ -52,26 +52,26 @@ ol {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
-.result{
+.result {
   align-self: end;
   margin-right: 30px;
 }
-.result__video-container video{
+.result__video-container video {
   width: 711px;
 }
-.content{
+.content {
   height: 534px;
   display: flex;
   align-items: center;
 }
-.search-form{
+.search-form {
   display: flex;
   padding-top: 8px;
-  gap:40px;
+  gap: 40px;
 }
-.search-form__submit-button{
+.search-form__submit-button {
   background-color: transparent;
   color: white;
   border: 1px solid white;
@@ -81,82 +81,76 @@ ol {
   height: 34px;
   width: 194px;
 }
-.search-form__submit-button:active{
+.search-form__submit-button:active {
   background-color: #545050;
 }
-.search-form__fieldset{
+.search-form__fieldset {
   border: 0;
   flex: 1;
 }
-.content__details{
+.content__details {
   width: 100%;
 }
-.content__list-container{
-
+.content__list-container {
   height: 298px;
   width: 399px;
   overflow-y: auto;
 }
-.search-form__label{
+.search-form__label {
   gap: 5px;
   align-items: center;
   width: fit-content;
   display: flex;
 }
-.search-form__label-text:hover{
+.search-form__label-text:hover {
   text-decoration: underline;
 }
-.search-form__label:focus-visible{
-}
-.search-form__checkbox-list{
-  display: flex;
-}
-.title{
-  font-family: 'Oswald', sans-serif;
+.title {
+  font-family: "Oswald", sans-serif;
   font-size: 75px;
   font-weight: 700;
   line-height: 94%;
   text-transform: uppercase;
   margin-bottom: 18px;
 }
-.content__accent{
+.content__accent {
   color: #545050;
 }
-.content__video-card{
+.content__video-card {
   justify-content: space-between;
   margin-bottom: 30px;
   display: flex;
 }
-.content__video-card:active{
+.content__video-card:active {
   background-color: #545050;
 }
-.content__video-card:hover{
+.content__video-card:hover {
   text-decoration: underline 1px white;
   text-underline-offset: 5px;
 }
-.content__video-card-thumbnail{
+.content__video-card-thumbnail {
   width: 194px;
   height: 103px;
 }
-.content__video-card-description-container{
+.content__video-card-description-container {
   width: 196px;
   display: flex;
   flex-direction: column;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   color: white;
 }
-.content__card-link{
+.content__card-link {
   text-decoration: none;
 }
-.content__video-card-title{
+.content__video-card-title {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   text-transform: uppercase;
-  font-size: 30px; 
+  font-size: 30px;
 }
-.content__video-card-description{
-  font-family: 'Fira Sans Condensed', sans-serif;
+.content__video-card-description {
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 16.2px;
@@ -169,35 +163,35 @@ ol {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   white-space: nowrap;
-} 
-.search-form__checkbox-list{
+}
+.search-form__checkbox-list {
   display: flex;
   gap: 15px;
 }
-.search-form__pseudo-checkbox{
+.search-form__pseudo-checkbox {
   width: 20px;
   height: 20px;
   border: 1px solid white;
   padding: 1px;
 }
 .search-form__pseudo-checkbox::after {
-  content: "";          /* обязательно: без этого псевдоэлемент не появится */
-  display: block;       /* делает его блочным, чтобы работали width/height */
+  content: ""; /* обязательно: без этого псевдоэлемент не появится */
+  display: block; /* делает его блочным, чтобы работали width/height */
   background-color: white;
-  width: 100%;          /* занимает всю ширину родителя */
-  height: 100%;         /* занимает всю высоту родителя */
+  width: 100%; /* занимает всю ширину родителя */
+  height: 100%; /* занимает всю высоту родителя */
   opacity: 0;
 }
 
-.search-form__checkbox:checked + .search-form__pseudo-checkbox::after{
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   opacity: 1;
 }
-.search-form__fieldset-title{
+.search-form__fieldset-title {
   margin-bottom: 5px;
   font-size: 18px;
   font-weight: 400;
 }
-.search-form__textfield{
+.search-form__textfield {
   width: 225px;
   height: 27px;
   margin-top: 5px;
@@ -206,12 +200,12 @@ ol {
   border-top: 1px solid white;
   border-bottom: 1px solid white;
 }
-.search-form__textfield::placeholder{
+.search-form__textfield::placeholder {
   font-size: 18px;
   font-weight: 400;
   color: rgb(255 255 255 / 0.7);
 }
-.more-button{
+.more-button {
   background-color: transparent;
   color: white;
   border: 1px solid white;
@@ -223,23 +217,22 @@ ol {
 .search-form__label {
   border: 1px solid transparent; /* резервируем место под рамку */
 }
-
 .search-form__label:focus-visible {
   border-radius: 0.5px;
   border-color: white;
   outline: none;
-} 
-.search-form__label:hover{
+}
+.search-form__label:hover {
   cursor: pointer;
 }
-.button:hover{
+.button:hover {
   cursor: pointer;
 }
-.button:focus-visible{
+.button:focus-visible {
   outline: 1px white solid;
   outline-offset: 1px;
 }
-.search-form__textfield:focus-visible{
+.search-form__textfield:focus-visible {
   outline: 1px white solid;
   outline-offset: 1px;
 }
