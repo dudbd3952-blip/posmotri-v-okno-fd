@@ -105,7 +105,7 @@ ol {
   display: flex;
   border: 1px solid transparent;
 }
-.search-form__label-text:hover {
+.search-form__label:hover {
   text-decoration: underline;
 }
 .title {
