@@ -55,6 +55,8 @@ ol {
   background-color: #d9d9d9;
 }
 .result {
+  display: flex;
+  flex-direction: column;
   align-self: end;
   margin-right: 30px;
 }
@@ -89,6 +91,7 @@ ol {
 .search-form__fieldset {
   border: 0;
   flex: 1;
+  
 }
 .content__details {
   width: 100%;
@@ -105,16 +108,13 @@ ol {
   display: flex;
   border: 1px solid transparent;
 }
-.search-form__label:hover {
-  text-decoration: underline;
-}
 .title {
   font-family: "Oswald", sans-serif;
   font-size: 75px;
   font-weight: 700;
   line-height: 94%;
   text-transform: uppercase;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 .content__accent {
   color: #545050;
@@ -123,9 +123,6 @@ ol {
   justify-content: space-between;
   margin-bottom: 30px;
   display: flex;
-}
-.content__card-link:active {
-  background-color: #545050;
 }
 .content__card-link:hover {
   text-decoration: underline 1px white;
@@ -192,7 +189,7 @@ ol {
   opacity: 1;
 }
 .search-form__fieldset-title {
-  margin-bottom: 0px;
+  margin-bottom: 3px;
   font-size: 18px;
   font-weight: 400;
 }
@@ -229,6 +226,9 @@ ol {
 }
 .button{
   height: 34px;
+  font-family: 'Fira Sans Condensed',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
 }
 .button:hover {
   cursor: pointer;
@@ -241,4 +241,7 @@ ol {
 .search-form__textfield:focus-visible {
   outline: 1px white solid;
   outline-offset: 1px;
+}
+.content__list-item:active{
+  background-color: #545050;
 }
